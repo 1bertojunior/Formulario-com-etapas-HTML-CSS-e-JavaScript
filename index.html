@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" type="text/css" href="css/normalize-8.0.1.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+</head>
+<body>
+
+    <section id="formulario">
+
+        <ul id="progress">
+            <li class="active-progress">City</li>
+            <li>Data & Serviço</li>
+            <li>Horário</li>
+        </ul>
+
+        <form id="form">
+
+            <div id="step1" class="step active">
+                <h2>Cidade</h2>
+                <h3>Escolha a  cidade sede</h3>
+                
+                <div>
+                    <select name="city" id="city" class="custom-select">
+                        <option value="1">City 1</option>
+                        <option value="2">City 2</option>
+                    </select>
+                </div>
+
+                <div class="btn">
+                    <button class="next botoes" id="nextFirts" type="button">Next</button>
+                </div>
+
+            </div>
+            <div id="step2" class="step">
+                <h2>Data e serviço</h2>
+                <h3>Data</h3>
+                <input type="date" name="data" placeholder="Data">
+                <h3>Serviço</h3>
+                <select name="city" id="city" class="custom-select">
+                    <option value="1">Service 1</option>
+                    <option value="2">Service 2</option>
+                </select>
+                <div class="btn">
+                    <button class="prev botoes" id="prevSec" type="button">Prev</button>
+                    <button class="next botoes" id="nextSec" type="button">Next</button>
+                </div>
+            </div>
+            <div id="step3" class="step">
+                <h2>Horário</h2>
+                <h3>Nome</h3>
+                <input type="text" name="name" placeholder="Seu nome">
+                <h3>Nome</h3>
+                <input type="text" name="surname" placeholder="Sobrenome">
+                <div class="btn">
+                    <button class="prev botoes" id="prevThird" type="button">Prev</button>
+                    <button class="send botoes" id="send" type="button">Enviar</button>
+                </div>
+            </div>
+
+        </form>
+
+        
+
+    </section>
+
+
+
+    <script src="js/main.js"></script>
+    
+</body>
+</html>
